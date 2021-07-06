@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import Movie from '../Movie'
-import Searchbox from '../SearchBox/index';
-
 import './style.css'
 
 function Home (){
@@ -18,12 +16,12 @@ function Home (){
         }
       
 
-    },[searchValue]);
+    },[searchValue, movies]);
 
 
     return (
     <div className="home-container">
-        <Searchbox searchValue={searchValue} setSearch={setSearch}/>
+        <input placeholder="search" className="search-box" type="text" onChange={(e) => setSearch(e.target.value)}/>
     <div className="home">  
         {
             movies.map((item) => (
