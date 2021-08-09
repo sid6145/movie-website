@@ -2,12 +2,13 @@ import React from 'react'
 import './style.css'
 import {Typography} from '@material-ui/core'
 
+const date = new Date().getFullYear()
 
 function Footer (){
 return (
-    <div className="footer">
-       <Typography variant="h6" >Copyright 2021</Typography>
-    </div>
+   
+       <Typography className="footer"> © Copyright Siddhant {date}</Typography>
+  
 )
 }
 

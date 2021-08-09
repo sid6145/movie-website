@@ -1,3 +1,4 @@
 .watch-list{
-    padding: 300px 200px;
+    min-height: 100vh;
+    padding: 100px;
 }

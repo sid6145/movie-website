@@ -7,7 +7,7 @@ function Toprated (){
 
     useEffect( async () => {
       
-        let res = await fetch(`http://www.omdbapi.com/?s=godzilla&apikey=63fbfcb7`)
+        let res = await fetch(`http://www.omdbapi.com/?s=new&apikey=63fbfcb7`)
         let resJson = await res.json()
        
         if(resJson.Search){

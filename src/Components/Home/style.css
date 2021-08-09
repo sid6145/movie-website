@@ -3,10 +3,12 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 35px;
+
 }
 
 .home-container {
   margin-top: 10px;
+  min-height: 100vh;
 }
 
 .search-box {
